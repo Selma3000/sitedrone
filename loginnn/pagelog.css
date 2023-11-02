@@ -1,0 +1,104 @@
+*
+{
+    margin :0;
+    padding :0;
+    box-sizing:border-box;
+    font-family: 'cursive', sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-items:center;
+    align-items:center;
+    min-height: 100vh;
+   
+}
+
+section 
+{
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  justify-content:center ;
+  align-items:center;
+  flex-wrap: wrap;
+  overflow:hidden;
+}
+section::before 
+{
+  content: ''; /*les effets derrière la boite*/
+  width: 100%; /*largeur du derriere*/
+  height: 100%;
+  background: repeating-linear-gradient(#272e2e,rgb(51, 187, 182),#000000)  /*les couleurs la */
+  
+}
+
+h1   {
+  outline-color: aqua;
+}
+
+section .signin
+{
+  position: absolute;
+  width: 400px; /*largeur de la boite*/
+  background: #222222;  
+  padding: 40px;  /*taille boite*/
+  border-radius: 40px; /*bords arrondis */
+  box-shadow: 2px 15px 30px rgba(0,0,0,9);
+}
+section .signin .content 
+{
+  position: relative;
+  width: 100%; /*largeur de tout le content*/
+  display: flex;  
+  flex-direction: column;/*met le content de sign in en colonne*/
+  gap:35px; /*espace entre connectez vous et champs pour se co */
+  align-items: center; /*yay connectez vous au milieu*/
+}
+section .signin .content h1 /*truc de connexion*/
+{
+  font-size: 2em; /*taille de connectez vous*/
+  color: rgb(106, 95, 102);
+  text-transform:capitalize;
+  
+} 
+section .signin .content .form 
+{
+  width: 100%; /*largeur du form*/
+  display: flex;
+  flex-direction: column; /*met le form en colonne */
+  gap: 25px; /*espace entre les form */
+}
+section .signin .content .form .inputBox
+{
+  position: relative; 
+  width: 100%;  /*largeur des box email mdp et login*/
+  
+}
+section .signin .content .form .inputBox input 
+{
+  position: relative;
+  width: 100%;
+  background: #333; /*couleur du background email mdp*/
+  border: none;    /*contour des box*/  /*border: solid;*/
+  outline-style:none ;
+  padding: 15px 10px 7.5px; /*dimension boite email mdp*/
+  border-radius: 10px;
+  color: #e7e4e4; 
+  font-size: 100%; /*taille de lecriture email mdp*/
+}
+
+.signin .content .form .inputBox input[type="submit"]
+{
+  padding: 2%; /*dimension login*/
+  background: rgb(100, 124, 148);
+  color: #000;
+  font-weight: 600; /*jai mis gras login*/
+  font-size: 150%;
+  cursor: pointer;
+  text-transform:capitalize;
+}
+
+
