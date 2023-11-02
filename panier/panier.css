@@ -1,0 +1,64 @@
+.page-panier {
+    margin: 80px ;
+
+}
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+.panierinfo {
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.panierinfo:hover img{
+	scale:1;
+}
+
+.panierinfo:hover {
+	box-shadow: 5px 15px 25px #685757;
+}
+th {
+  
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background : #110e0d
+}
+
+td{
+    padding: 10px 5px;
+}
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: #ba0b0b;
+    font-size: 12px;
+}
+
+td img {
+    width: 100px;
+    height: 80px;
+    margin-right: 15px;
+} 
+
+.prix-total {
+    display: flex;
+    justify-content: flex-end;
+}
+.prix-total table {
+    border-top: 3px solid #a79218;
+    width:100%;
+    max-width: 400px;
+}
+td:last-child {
+    text-align: right;
+}
+th:last-child {
+    text-align: right;
+}
